@@ -1,8 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+  font-family: Arial;
+  text-align: center;
+  }
+
+.grid-container{
+    display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+padding: 2%;  
+}
+
+img{
+    object-fit: cover;
+  width: 100%;
+  
+}
+img:hover{
+    opacity: 0.5;
+}
+
+.daytime {  	
+    background: #014421;   
+}
+    
+.nightMode{ 
+      background: #191970;
+}
+
 .header {
     padding: 50px;
     text-align: center;
     font-family:'Times New Roman', Times, serif;
-    background: #014421;
     color: #EDEADE;
     font-size: 30px;
     }
@@ -11,12 +42,21 @@
     padding: 50px;
     text-align: center;
     font-family:'Times New Roman', Times, serif;
-    background: #014421;
     color: #EDEADE;
     font-size: 18px;
     }
 
-.img {
-    width: 500;
-    height: 500;
+
+@media screen and (max-width>= 481px), 
+ screen and (min-width<= 960px) {
+    .grid-container{
+        grid-template-columns: auto auto auto;
     }
+}
+@media screen and (max-width: 600px)
+{
+    .grid-container{
+ grid-template-columns: auto;
+     }
+    
+}

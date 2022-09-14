@@ -1,21 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-		<title>Web Development 2022</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Web Development 2022</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="header">
-            <h1>Web Development 2022</h1>
-        </div>
+        <!-- <script src="gridscript.js"></script> -->
+    </head>
 
-        <a href=""><img src="imgs/jeep.webp"></a>
+    <body>
+        <header class="header">Web Development 2022</header>
+        <div class="grid-container">
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>  
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>  
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>  
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>  
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>  
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>
+            <div class="grid-item"><img src="hwicon.png"></div>
+        </div>
 
         <footer>
             <div class="footer">
                 <p>© 2022 Santino Fuentes</p>
             </div>
         </footer>
-	</body>
+
+    </body>
+
+    <script>
+      
+        let myVar1 = 1;
+        //console.log(myVar1);
+        
+         let myVar2 = 2;
+        //console.log(myVar2);
+        //console.log(myVar1 + myVar2);
+        
+        let string = 'hello';
+        //console.log(string + myVar1);
+        
+        const background = document.querySelector('body');
+        
+        
+        
+     //let hour = new Date().getHours();
+     let hour = 7;
+      console.log(hour);
+      
+      if(hour >= 18 || hour < 6){
+         background.classList.add("nightMode");
+        
+      }else{
+         background.classList.add("daytime");
+       
+      }
+
+
+      </script>
+
+
 </html>
